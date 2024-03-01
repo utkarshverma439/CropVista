@@ -1,0 +1,41 @@
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image-container {
+  position: relative;
+  border: 1px solid #ccc;
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  background-color: #fff; /* Background color for the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+}
+
+.image-container h1 {
+  color: #333;
+  font-size: 24px; /* Adjust title size */
+  text-align: center; /* Center the title */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure image is not bigger than its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove default inline behavior */
+  margin: 0 auto; /* Center image horizontally */
+  padding: 10px 0; /* Add some space above and below the image */
+}
+
+.image-description {
+  color: #666; /* Lighter text color for the description */
+  font-size: 16px; /* Adjust description size */
+  text-align: justify; /* Justify description text for better readability */
+  margin-top: 10px; /* Add some space above the description */
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    margin: 20px 10px; /* Adjust margins for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}

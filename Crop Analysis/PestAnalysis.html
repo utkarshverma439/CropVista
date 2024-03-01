@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Favicon -->
+      <link id='favicon' rel="shortcut icon" href="../image/favicon.png" type="image/x-png">
+  <title>CropVista: Smart Agri Analysis</title>
+</head>
+
+<body>
+    <h2 class="heading"><i class="fas fa-user-alt"></i> Pest <span>Analysis</span></h2>
+    <div class="image-row">
+  <div class="image-container">
+    <h1>Count of the Insects</h1>
+    <img src="image/NoOfInsects.png" alt="Image 1">
+    <p class="image-description">In our dataset, images are used to count insects for training our machine learning model. 
+      These insects are present in the field.</p>
+  </div>
+    <div class="image-container">
+    <h1>Insects Images</h1>
+    <img src="image/Insect.png" alt="Image 2">
+    <p class="image-description">These insects are commonly found in agricultural fields, 
+      where they play a significant role in ecosystem dynamics.</p>
+  </div> 
+</div>
+
+  <!-- footer section starts -->
+  <section class="footer">
+  
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>CropVista: Smart Agri Analysis</h3>
+            <p>Thank you for visiting our website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+        </div>
+  
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+            <a href="#about"><i class="fas fa-chevron-circle-right"></i> cropInsight</a>
+            <a href="#contact"><i class="fas fa-chevron-circle-right"></i> contact</a>
+        </div>
+  
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i>+91 708-174-5339</p>
+            <p> <i class="fas fa-envelope"></i>utkarsh9741@gmail.com</p>
+            <p> <i class="fas fa-map-marked-alt"></i>Rae-bareli, Uttar Pradesh, India-229001</p>
+            <div class="share">
+  
+                <a href="https://www.linkedin.com/in/utkarsh-verma-912bb4265/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                <a href="https://github.com/utkarshverma439" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                <a href="mailto:utkarsh9741@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+  
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/utkarsh-verma-912bb4265/"> Utkarsh Verma</a></h1>
+  
+  </section>
+<!-- footer section ends -->  
+
+  <script>
+    // If you want to add interactivity using JavaScript, you can do it here.
+    // For example, you can add a click event listener to the images.
+    document.querySelectorAll('.image-container img').forEach(img => {
+      img.addEventListener('click', function() {
+        alert('You clicked on ' + this.alt);
+        // Add more functionality as needed
+      });
+    });
+  </script>
+
+</body>
+</html>
