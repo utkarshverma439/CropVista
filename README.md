@@ -1,9 +1,5 @@
 # Crop Vista
 
-![Crop Vista Logo](image/CropVista.png)
-
-## About the Project
-
 Crop Vista is a crop analysis application designed to predict suitable crops based on various environmental factors and soil composition. This project leverages data such as nitrogen, phosphorous, potassium levels, rainfall, humidity, and soil pH to recommend optimal crops for Indian agriculture.
 
 ## Features
