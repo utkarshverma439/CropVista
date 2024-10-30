@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation System</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 10px;
+        }
+        .container{
+            max-width: 800px;
+            border-radius: 10px;
+            background: #fff;
+            width: 800px;
+            padding: 25px 40px 10px 40px;
+            box-shadow: 25px 15px 15px rgba(10, 9, 9, 0.833);
+          }
+          .container .text{
+            text-align: center;
+            font-size: 41px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .container form{
+            padding: 30px 0 0 0;
+          }
+          .container form .form-row{
+            display: flex;
+            margin: 32px 0;
+          }
+          form .form-row .input-data{
+            width: 100%;
+            height: 40px;
+            margin: 0 20px;
+            position: relative;
+          }
+          form .form-row .textarea{
+            height: 70px;
+          }
+          .box{
+            padding-left: 40%;
+          }
+          
+          .input-data input,
+          .textarea textarea{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid rgba(0,0,0, 0.12);
+          }
+
+        input[type="text"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            background-color: #56d8e4;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #3fcfd1;
+        }
+
+        @media (max-width: 700px) {
+            .container .text{
+              font-size: 30px;
+            }
+            .container form{
+              padding: 10px 0 0 0;
+            }
+            .container form .form-row{
+              display: block;
+            }
+            form .form-row .input-data{
+              margin: 35px 0!important;
+            }
+            .submit-btn .input-data{
+              width: 40%!important;
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h3>Crop Recommendation System</h3>
+        </div>
+    <form action="/predict" method="post">
+        <div class="form-row">
+            <div class="input-data">
+        <label for="Nitrogen">Nitrogen Contain in Soil:</label><br>
+        <input type="text" id="Nitrogen" name="Nitrogen" required><br>
+            </div>
+        </div>
+
+        <label for="Phosphorus">Phosphorus Contain in Soil:</label><br>
+        <input type="text" id="Phosphorus" name="Phosphorus" required><br>
+
+        <label for="Potassium">Potassium Contain in Soil:</label><br>
+        <input type="text" id="Potassium" name="Potassium" required><br>
+
+        <label for="Temperature">Temperature in ℃:</label><br>
+        <input type="text" id="Temperature" name="Temperature" required><br>
+
+        <label for="Humidity">Humidity of Air:</label><br>
+        <input type="text" id="Humidity" name="Humidity" required><br>
+
+        <label for="pH">pH of Soil:</label><br>
+        <input type="text" id="pH" name="pH" required><br>
+
+        <label for="Rainfall">Rainfall in cm:</label><br>
+        <input type="text" id="Rainfall" name="Rainfall" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</div>
+</body>
+</html>
